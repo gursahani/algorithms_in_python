@@ -1,1 +1,2 @@
-100
+tionary:
+                #     table[i][j] = 1  
