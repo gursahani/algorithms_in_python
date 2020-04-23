@@ -13,14 +13,12 @@
 ###
 
 
-
 def reverse_contents(fileObj):
     line = fileObj.readline()
     if line:
         reverse_contents(fileObj)
         print(line)
-        
-fileObj = open("file.txt","r")    
+
+
+fileObj = open("file.txt", "r")
 reverse_contents(fileObj)
-
-

@@ -20,7 +20,7 @@ def fib(n):
     return f
 
 
-print(fib(2))
+print(fib(20))
 
 
 def fib_memo(n, memo):
@@ -29,13 +29,13 @@ def fib_memo(n, memo):
     if n <= 1:
         return n
     else:
-        f = fib_memo(n - 1,memo) + fib_memo(n - 2, memo)
+        f = fib_memo(n - 1, memo) + fib_memo(n - 2, memo)
         memo[n] = f
     return memo[n]
     # else:
     #     return 0
 
-print(fib_memo(90,{}))
+# print(fib(90))
 ##
 # T(n) = T(n - 1) + T(n - 2) + O(1)
 #       >= F(n) ~~ 2^n 

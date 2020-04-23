@@ -12,20 +12,16 @@
 ###
 
 
-def print_helper(num,prefix):
+def print_helper(num, prefix):
     if num == 0:
         print(prefix)
     else:
-        for i in range(0,10):
+        for i in range(0, 10):
             print_helper(num - 1, prefix + str(i))
 
 
-
-
 def print_decimal(num):
-     print_helper(num,"")           
-
-
+    print_helper(num, "")
 
 
 print_decimal(3)

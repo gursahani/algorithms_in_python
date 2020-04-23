@@ -17,6 +17,8 @@ import pathlib
 from pathlib import Path
 
 print(Path.cwd())
+
+
 def crawl(name):
     if Path(name).is_file():
         print(name)
@@ -32,12 +34,12 @@ def crawl(name):
 
 
 # l = []
-# p = Path('recursion')
+# p = Path('../')
 # for x in p.iterdir():
 #     l.append(x)
-    
+#
 # print(l)
-print(crawl('recursion'))
+print(crawl('../'))
         
 
 
