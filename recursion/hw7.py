@@ -26,7 +26,7 @@ def createTable(string, dictionary):
     table = [[0]*len(string) for i in range(len(string))]
 
     for i in range(len(table)):
-        for j in range(0,len(table)):
+        for j in range(0, len(table)):
             if string[i] in dictionary:
                 table[i][i] = 1
                 if string[i:j] in dictionary:

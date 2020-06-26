@@ -1,6 +1,3 @@
-import random
-
-
 def quick_sort(arr, lo, hi):
     if lo < hi:
         q = partition(arr, lo, hi)
@@ -25,7 +22,7 @@ def swap(a, b):
     b = temp
 
 
-arr = [3, 5, 7, 1, 9, 10, 12]
+arr = [13, 5, 17, 1, 9, 10, 12]
 n = len(arr)
 quick_sort(arr, 0, n - 1)
 
